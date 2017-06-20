@@ -24,10 +24,10 @@
     "source": "src/**/*.html"
   },
   "cssProcessor": {
-    "id": "sass",
-    "displayName": "Sass",
-    "fileExtension": ".scss",
-    "source": "src/**/*.scss"
+    "id": "none",
+    "displayName": "None",
+    "fileExtension": ".css",
+    "source": "src/**/*.css"
   },
   "editor": {
     "id": "vscode",
