@@ -121,7 +121,44 @@
           {
             "name": "libvantage",
             "path": "../node_modules/libvantage/dist",
-            "main": "index"
+            "main": "index",
+            "resources": [
+              "utilities.css",
+              "vantage.css",
+              "resources/elements/card.js",
+              "resources/elements/card.html",
+              "resources/elements/card.css",
+              "resources/elements/v-button.js",
+              "resources/elements/v-button.html",
+              "resources/elements/v-button.css",
+              "resources/elements/v-number.js",
+              "resources/elements/v-number.html",
+              "resources/elements/v-number.css",
+              "resources/elements/v-selection.js",
+              "resources/elements/v-selection.html",
+              "resources/elements/v-selection.css",
+              "resources/elements/v-slider.js",
+              "resources/elements/v-slider.html",
+              "resources/elements/v-slider.css",
+              "resources/elements/v-switch.js",
+              "resources/elements/v-switch.html",
+              "resources/elements/v-switch.css",
+              "resources/elements/v-text.js",
+              "resources/elements/v-text.html",
+              "resources/elements/v-text.css",
+              "resources/elements/v-tree-node.js",
+              "resources/elements/v-tree-node.html",
+              "resources/elements/v-tree-node.css",
+              "resources/elements/v-tree.js",
+              "resources/elements/v-tree.html",
+              "resources/elements/v-tree.css",
+              "resources/value-converters/array.js",
+              "resources/value-converters/number.js",
+              "resources/value-converters/object.js",
+              "resources/images/caret-down-svg.html",
+              "resources/images/minus-svg.html",
+              "resources/images/plus-svg.html"
+            ]
           }
         ]
       }

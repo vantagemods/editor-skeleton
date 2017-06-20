@@ -52,6 +52,7 @@
     "vinyl-fs": "^2.4.3"
   },
   "scripts": {
-    "build": "./node_modules/.bin/aurelia build --env prod"
+    "build": "./node_modules/.bin/aurelia build --env prod",
+    "watch": "./node_modules/.bin/aurelia run --watch"
   }
 }
