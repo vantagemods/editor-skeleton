@@ -1,5 +1,3 @@
-# Vantage Editor Skeleton
-
 ## Requirements
 
 - [Node.js](https://nodejs.org) (LTS or Current)
