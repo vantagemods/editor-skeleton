@@ -1,15 +1,14 @@
 {
-  "name": "editor-skeleton",
-  "author": "Team Vantage",
-  "description": "Replace this with a description of your editor.",
+  "name": "Team ZG2",
+  "author": "Zombiegammer255",
+  "description": "Fortza Horitzon 3 Mod by Zombie.",
   "version": "0.1.0",
   "vantage": {
-    "game": "Game Name",
-    "scid": "00000000-0000-0000-0000-000000000000",
+    "game"Forza Horizon 3",
+    "scid": "19020100-9575-4c2b-9916-3d6642celdfab",
     "thumbnailUrl": "https://i.imgur.com/hgdfCBd.png",
     "name": "Campaign Editor",
-    "containerFilter": "savegame.svg",
-    "fileFilter": "save"
+    "fileFilter": "/^FozaSaveSlot_\\d+$/"
   },
   "repository": {
     "type": "git",
