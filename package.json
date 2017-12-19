@@ -1,12 +1,12 @@
 {
   "name": "editor-skeleton",
   "author": "Team Vantage",
-  "description": "Replace this with a description of your editor.",
+  "description": "FH3 mod",
   "version": "0.1.0",
   "vantage": {
-    "game": "Game Name",
-    "scid": "00000000-0000-0000-0000-000000000000",
-    "thumbnailUrl": "https://i.imgur.com/hgdfCBd.png",
+    "game": "Forza Horizon 3",
+    "scid": "E24186CE-9F25-4898-8870-013B4A4F3F21",
+    "thumbnailUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1gVlz?ver=d884&q=90&m=6&h=450&w=800&b=white&l=f&o=t&aim=true",
     "name": "Campaign Editor",
     "containerFilter": "savegame.svg",
     "fileFilter": "save"
