@@ -22,7 +22,7 @@
     "big-integer": "^1.6.26",
     "bluebird": "^3.5.1",
     "crc-32": "^1.1.1",
-    "libvantage": "^0.1.1",
+    "libvantage": "^0.2.0",
     "requirejs": "^2.3.5",
     "text": "github:requirejs/text#latest",
     "tslib": "^1.8.1"
