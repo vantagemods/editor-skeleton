@@ -1,70 +1,16 @@
 {
   "name": "vantage-editor",
   "type": "project:application",
-  "platform": {
-    "id": "web",
-    "displayName": "Web",
-    "output": "scripts",
-    "index": "index.html",
-    "baseDir": "."
-  },
-  "transpiler": {
-    "id": "typescript",
-    "displayName": "TypeScript",
-    "fileExtension": ".ts",
-    "dtsSource": [
-      "./custom_typings/**/*.d.ts"
-    ],
-    "source": "src/**/*.ts"
-  },
-  "markupProcessor": {
-    "id": "minimum",
-    "displayName": "Minimal Minification",
-    "fileExtension": ".html",
-    "source": "src/**/*.html"
-  },
-  "cssProcessor": {
-    "id": "none",
-    "displayName": "None",
-    "fileExtension": ".css",
-    "source": "src/**/*.css"
-  },
-  "editor": {
-    "id": "vscode",
-    "displayName": "Visual Studio Code"
-  },
-  "unitTestRunner": {
-    "id": "none",
-    "displayName": "None"
-  },
-  "paths": {
-    "root": "src"
-  },
   "build": {
     "targets": [
       {
         "id": "web",
         "displayName": "Web",
-        "output": "scripts",
         "index": "index.html",
-        "baseDir": "."
+        "baseDir": ".",
+        "output": "scripts"
       }
     ],
-    "loader": {
-      "type": "require",
-      "configTarget": "vendor-bundle.js",
-      "includeBundleMetadataInConfig": "auto",
-      "plugins": [
-        {
-          "name": "text",
-          "extensions": [
-            ".html",
-            ".css"
-          ],
-          "stub": false
-        }
-      ]
-    },
     "options": {
       "minify": "beta & prod",
       "sourcemaps": "dev & beta"
@@ -81,7 +27,14 @@
         "name": "vendor-bundle.js",
         "prepend": [
           "node_modules/bluebird/js/browser/bluebird.core.js",
-          "node_modules/aurelia-cli/lib/resources/scripts/configure-bluebird.js",
+          {
+            "path": "node_modules/aurelia-cli/lib/resources/scripts/configure-bluebird-no-long-stacktraces.js",
+            "env": "beta & prod"
+          },
+          {
+            "path": "node_modules/aurelia-cli/lib/resources/scripts/configure-bluebird.js",
+            "env": "dev"
+          },
           "node_modules/requirejs/require.js"
         ],
         "dependencies": [
@@ -162,6 +115,60 @@
           }
         ]
       }
-    ]
+    ],
+    "loader": {
+      "type": "require",
+      "configTarget": "vendor-bundle.js",
+      "includeBundleMetadataInConfig": "auto",
+      "plugins": [
+        {
+          "name": "text",
+          "extensions": [
+            ".html",
+            ".css"
+          ],
+          "stub": false
+        }
+      ]
+    }
+  },
+  "platform": {
+    "id": "web",
+    "displayName": "Web",
+    "index": "index.html",
+    "baseDir": ".",
+    "output": "scripts" 
+  },
+  "transpiler": {
+    "id": "typescript",
+    "displayName": "TypeScript",
+    "fileExtension": ".ts",
+    "dtsSource": [
+      "./custom_typings/**/*.d.ts"
+    ],
+    "source": "src/**/*.ts"
+  },
+  "markupProcessor": {
+    "id": "minimum",
+    "displayName": "Minimal Minification",
+    "fileExtension": ".html",
+    "source": "src/**/*.html"
+  },
+  "cssProcessor": {
+    "id": "none",
+    "displayName": "None",
+    "fileExtension": ".css",
+    "source": "src/**/*.css"
+  },
+  "editor": {
+    "id": "vscode",
+    "displayName": "Visual Studio Code"
+  },
+  "unitTestRunner": {
+    "id": "none",
+    "displayName": "None"
+  },
+  "paths": {
+    "root": "src"
   }
 }
