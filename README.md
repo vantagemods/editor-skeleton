@@ -37,7 +37,7 @@ For advanced users, the build system - and everything else in the project - can 
 
 Before releasing, make sure you run `npm run build` and commit your `scripts` folder to GitHub. If you plan to publish to [npm](https://www.npmjs.com/), this step isn't necessary.
 
-**If you are releasing an updated trainer, make sure you increase the version number in the `package.json` file.**
+**If you are releasing an updated editor, make sure you increase the version number in the `package.json` file and verify that the `vantage` property fields are filled out correctly.**
 
 ### Releasing on GitHub
 
