@@ -23,9 +23,6 @@ Thumbs.db
 # Dependencies
 node_modules
 
-# Compiled files
-scripts
-
 # Log files
 npm-debug.log
 
