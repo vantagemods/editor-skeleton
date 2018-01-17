@@ -76,7 +76,6 @@
             "path": "../node_modules/libvantage/dist",
             "main": "index",
             "resources": [
-              "utilities.css",
               "vantage.css",
               "resources/elements/card.js",
               "resources/elements/card.html",
