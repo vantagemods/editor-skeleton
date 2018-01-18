@@ -25,6 +25,10 @@ Every editor comes with `libvantage` preinstalled. `libvantage` provides functio
 
 `src/editor.ts` and `src/editor.html` are the best places to start coding. Vantage will call your `load()` and `save()` methods when the user wants to load or save a saved game file.
 
+## Assets
+
+You can include images and other static assets by copying them to the `assets` folder. Example usage: `<img src="/assets/image.png">`
+
 ## Basic Commands
 
 - `npm run watch` - Build your editor and actively watch for changes. Any changes you make to your code will refresh the editor in Vantage, instantly.
