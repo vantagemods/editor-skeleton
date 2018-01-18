@@ -1,6 +1,7 @@
 ## Requirements
 
 - [Node.js](https://nodejs.org) (LTS or Current)
+- [Git](https://git-scm.com/downloads)
 
 ## Setup
 
@@ -16,6 +17,8 @@ Fill in the `vantage` property in `package.json` to explain what your editor doe
 - `fileFilter` - Same as containerFilter, but for file names. *(optional)*
 
 Once you filled that out, open Vantage and add an editor to the list. Click `Install Local Editor` and select the root directory of your project.
+
+**Don't forget to run `npm install`.**
 
 ## Development
 
